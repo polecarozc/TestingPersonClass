@@ -95,4 +95,27 @@ public class TestPerson {
         Integer actual = person.getAge();
         Assert.assertEquals(expected, actual);
     }
+
+    @Test
+    public void testHairColor(){
+        Person person = new Person();
+        String expected = "Brown";
+
+        person.setHairColor(expected);
+
+        String actual = person.getHairColor();
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testGender(){
+        Person person = new Person();
+        String expected = "Male";
+
+        person.setGender(expected);
+
+        String actual = person.getGender();
+        Assert.assertEquals(expected, actual);
+
+    }
 }
